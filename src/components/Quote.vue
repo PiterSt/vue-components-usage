@@ -13,10 +13,10 @@ export default {
 <style scoped>
 div {
 	margin: 40px auto;
-	padding: 30px;
-	box-shadow: 10px 10px 15px rgb(53, 53, 53);
+	padding: 60px;
+	box-shadow: 7px 7px 15px rgb(97, 97, 97);
 	border: 1px solid rgb(206, 206, 206);
 	text-align: center;
-
+	max-width: 500px;
 }
 </style>

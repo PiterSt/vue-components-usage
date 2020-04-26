@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-xs-12">
 				<h1>Hello world!</h1>
-				<quote/>
+				<Quote/>
             </div>
         </div>
     </div>
@@ -20,6 +20,9 @@
 </script>
 
 <style scoped>
+h1 {
+	padding: 30px;
+}
 div {
 	margin: 0 auto;
 	text-align: center;
