@@ -3,7 +3,10 @@
         <div class="row">
             <div class="col-xs-12">
 				<h1>Hello world!</h1>
-				<Quote/>
+				<Quote>
+					<h3>{{ quote.quoteTitle }}</h3>
+					<p><q>{{ quote.quoteContent }}</q></p>
+				</Quote>
             </div>
         </div>
     </div>
@@ -15,6 +18,14 @@
     export default {
 		components: {
 			Quote
+		},
+		data: function() {
+			return {
+				quote: {
+					quoteTitle: 'The Quote of the day:',
+					quoteContent: 'To envision the future, one must learn from the past to create a new tomorrow.'
+				}
+			}
 		}
     }
 </script>

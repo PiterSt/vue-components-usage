@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<p><q>To envision the future, one must learn from the past to create a new tomorrow.</q></p>
+		<slot></slot>
 	</div>
 </template>
 
@@ -18,5 +18,9 @@ div {
 	border: 1px solid rgb(206, 206, 206);
 	text-align: center;
 	max-width: 500px;
+}
+
+h3 {
+	color:rgb(112, 162, 180)
 }
 </style>
