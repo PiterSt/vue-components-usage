@@ -3,11 +3,19 @@
         <div class="row">
             <div class="col-xs-12">
 				<h1>Hello world!</h1>
-				<Quote>
+				<button @click="selectedComponent = 'Quote'">Quote</button>
+				<button @click="selectedComponent = 'Author'">Author</button>
+				<button @click="selectedComponent = 'NewQuote'">NewQuote</button>
+				<p>{{ selectedComponent }}</p>
+				<hr>
+				<component :is="selectedComponent">
 					<h3 slot="title">{{ quote.quoteTitle }}</h3>
-					<h4 slot="subtitle">Quote nr 21</h4>
+					<p slot="subtitle">Quote nr 21</p>
 					<p slot="content"><q>{{ quote.quoteContent }}</q></p>
-				</Quote>
+				</component>
+				<!-- <Quote>
+					
+				</Quote> -->
             </div>
         </div>
     </div>
@@ -15,17 +23,22 @@
 
 <script>
     import Quote from './components/Quote.vue'
+    import Author from './components/Author.vue'
+    import NewQuote from './components/NewQuote.vue'
 
     export default {
 		components: {
-			Quote
+			Quote,
+			Author,
+			NewQuote
 		},
 		data: function() {
 			return {
 				quote: {
 					quoteTitle: 'The Quote of the day:',
 					quoteContent: 'To envision the future, one must learn from the past to create a new tomorrow.'
-				}
+				},
+				selectedComponent: 'Quote'
 			}
 		}
     }
