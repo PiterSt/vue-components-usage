@@ -1,8 +1,10 @@
 <template>
 	<div>
+		<h2>Hypertrophy:</h2>
+		<hr>
 		<slot name="title"></slot>
-		<span style="color: grey; text-decoration: underline"><slot name="subtitle">The subtitle</slot></span>
-		<slot name="content"></slot>
+		<span style="text-decoration: underline"><slot name="author">No author</slot></span>
+		<slot name="duration"></slot>
 	</div>
 </template>
 
@@ -17,10 +19,8 @@ div {
 	margin: 40px auto;
 	padding: 60px;
 	box-shadow: 7px 7px 15px rgb(97, 97, 97);
-	border: 1px solid rgb(206, 206, 206);
 	text-align: center;
 	max-width: 500px;
+	background-color:rosybrown;
 }
-
-
 </style>
