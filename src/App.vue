@@ -4,8 +4,9 @@
             <div class="col-xs-12">
 				<h1>Hello world!</h1>
 				<Quote>
-					<h3>{{ quote.quoteTitle }}</h3>
-					<p><q>{{ quote.quoteContent }}</q></p>
+					<h3 slot="title">{{ quote.quoteTitle }}</h3>
+					<h4 slot="subtitle">Quote nr 21</h4>
+					<p slot="content"><q>{{ quote.quoteContent }}</q></p>
 				</Quote>
             </div>
         </div>
@@ -37,5 +38,8 @@ h1 {
 div {
 	margin: 0 auto;
 	text-align: center;
+}
+h3 {
+	color:rgb(112, 162, 180)
 }
 </style>

@@ -1,6 +1,8 @@
 <template>
 	<div>
-		<slot></slot>
+		<slot name="title"></slot>
+		<span style="color: red"><slot name="subtitle">The subtitle</slot></span>
+		<slot name="content"></slot>
 	</div>
 </template>
 
@@ -20,7 +22,5 @@ div {
 	max-width: 500px;
 }
 
-h3 {
-	color:rgb(112, 162, 180)
-}
+
 </style>
